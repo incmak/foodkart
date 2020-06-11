@@ -90,9 +90,8 @@ CREATE TABLE `manager` (
 --
 
 INSERT INTO `manager` (`username`, `fullname`, `email`, `contact`, `address`, `password`) VALUES
-('aditi068', 'Aditi Naik', 'aditi@gmail.com', '8654751259', 'Goa', 'aditi'),
-('aminnikhil073', 'Nikhil Amin', 'aminnikhil073@gmail.com', '9632587412', 'Karnataka', 'nikhil'),
-('roshanraj07', 'Roshan Raj', 'roshan@gmail.com', '9541258761', 'Bihar', 'roshan');
+('mak', 'MAK', 'mak@gmail.com', '9797979797', 'Sgr', 'mak'),
+('hanan', 'Hanan Ahmed', 'hanan0011@gmail.com', '9906990699', 'Kmr', 'hanan');
 
 -- --------------------------------------------------------
 
