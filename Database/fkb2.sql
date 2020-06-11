@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.5
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 24, 2017 at 05:23 PM
--- Server version: 5.7.11
--- PHP Version: 5.6.19
+-- Generation Time: Jun 11, 2020 at 07:24 AM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -17,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `foodkart`
+-- Database: `fkb2`
 --
 
 -- --------------------------------------------------------
@@ -55,7 +57,6 @@ CREATE TABLE `food` (
   `name` varchar(30) NOT NULL,
   `price` int(30) NOT NULL,
   `description` varchar(200) NOT NULL,
-  `R_ID` int(30) NOT NULL,
   `images_path` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -90,8 +91,8 @@ CREATE TABLE `manager` (
 --
 
 INSERT INTO `manager` (`username`, `fullname`, `email`, `contact`, `address`, `password`) VALUES
-('mak', 'MAK', 'mak@gmail.com', '9797979797', 'Sgr', 'mak'),
-('hanan', 'Hanan Ahmed', 'hanan0011@gmail.com', '9906990699', 'Kmr', 'hanan');
+('hanan', 'Hanan Ahmed', 'hanan0011@gmail.com', '9906990699', 'Kmr', 'hanan'),
+('mak', 'MAK', 'mak@gmail.com', '9797979797', 'Sgr', 'mak');
 
 -- --------------------------------------------------------
 
@@ -106,8 +107,7 @@ CREATE TABLE `orders` (
   `price` int(30) NOT NULL,
   `quantity` int(30) NOT NULL,
   `order_date` date NOT NULL,
-  `username` varchar(30) NOT NULL,
-  `R_ID` int(30) NOT NULL
+  `username` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -148,8 +148,7 @@ ALTER TABLE `customer`
 -- Indexes for table `food`
 --
 ALTER TABLE `food`
-  ADD PRIMARY KEY (`F_ID`,`R_ID`),
-  ADD KEY `R_ID` (`R_ID`);
+  ADD PRIMARY KEY (`F_ID`);
 
 --
 -- Indexes for table `manager`
@@ -163,8 +162,7 @@ ALTER TABLE `manager`
 ALTER TABLE `orders`
   ADD PRIMARY KEY (`order_ID`),
   ADD KEY `F_ID` (`F_ID`),
-  ADD KEY `username` (`username`),
-  ADD KEY `R_ID` (`R_ID`);
+  ADD KEY `username` (`username`);
 
 --
 -- Indexes for table `restaurants`
@@ -182,23 +180,22 @@ ALTER TABLE `restaurants`
 -- AUTO_INCREMENT for table `food`
 --
 ALTER TABLE `food`
-  MODIFY `F_ID` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `F_ID` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
+
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
   MODIFY `order_ID` int(30) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `restaurants`
 --
 ALTER TABLE `restaurants`
   MODIFY `R_ID` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
---
--- Constraints for dumped tables
---
 
 --
--- Constraints for table `food`
+-- Constraints for dumped tables
 --
 
 --
@@ -206,12 +203,8 @@ ALTER TABLE `restaurants`
 --
 ALTER TABLE `orders`
   ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`F_ID`) REFERENCES `food` (`F_ID`),
-  ADD CONSTRAINT `orders_ibfk_2` FOREIGN KEY (`username`) REFERENCES `customer` (`username`),
-  ADD CONSTRAINT `orders_ibfk_3` FOREIGN KEY (`R_ID`) REFERENCES `restaurants` (`R_ID`);
-
---
--- Constraints for table `restaurants`
---
+  ADD CONSTRAINT `orders_ibfk_2` FOREIGN KEY (`username`) REFERENCES `customer` (`username`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
