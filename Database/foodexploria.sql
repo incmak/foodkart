@@ -130,9 +130,9 @@ CREATE TABLE `restaurants` (
 --
 
 INSERT INTO `restaurants` (`R_ID`, `name`, `email`, `contact`, `address`, `M_ID`) VALUES
-(1, 'Nikhil\'s Restaurant', 'nikhil@restaurant.com', '7998562145', 'Karnataka', 'aminnikhil073'),
-(2, 'Roshan\'s Restaurant', 'roshan@restaurant.com', '9887546821', 'Bihar', 'roshanraj07'),
-(3, 'Aditi\'s Restaurant', 'aditi@restaurant.com', '7778564231', 'Goa', 'aditi068');
+(1, 'Amigos', 'amigos@restaurant.com', '4567432190', 'Gogji Bagh', 'amigo#001'),
+(2, 'Chilliz', 'chillz@restaurant.com', '78976534234', 'Dargah', 'chillz#001'),
+(3, 'Tib Hut', 'tibhut@restaurant.com', '123532345', 'lachowk', 'Tib#001');
 
 --
 -- Indexes for dumped tables
