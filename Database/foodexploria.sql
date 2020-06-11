@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `foodexploria`
+-- Database: `foodkart`
 --
 
 -- --------------------------------------------------------
@@ -200,8 +200,6 @@ ALTER TABLE `restaurants`
 --
 -- Constraints for table `food`
 --
-ALTER TABLE `food`
-  ADD CONSTRAINT `food_ibfk_1` FOREIGN KEY (`R_ID`) REFERENCES `restaurants` (`R_ID`);
 
 --
 -- Constraints for table `orders`
@@ -214,8 +212,6 @@ ALTER TABLE `orders`
 --
 -- Constraints for table `restaurants`
 --
-ALTER TABLE `restaurants`
-  ADD CONSTRAINT `restaurants_ibfk_1` FOREIGN KEY (`M_ID`) REFERENCES `manager` (`username`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
