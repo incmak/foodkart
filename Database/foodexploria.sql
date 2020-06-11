@@ -55,7 +55,6 @@ CREATE TABLE `food` (
   `name` varchar(30) NOT NULL,
   `price` int(30) NOT NULL,
   `description` varchar(200) NOT NULL,
-  `R_ID` int(30) NOT NULL,
   `images_path` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -107,7 +106,6 @@ CREATE TABLE `orders` (
   `quantity` int(30) NOT NULL,
   `order_date` date NOT NULL,
   `username` varchar(30) NOT NULL,
-  `R_ID` int(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -148,8 +146,7 @@ ALTER TABLE `customer`
 -- Indexes for table `food`
 --
 ALTER TABLE `food`
-  ADD PRIMARY KEY (`F_ID`,`R_ID`),
-  ADD KEY `R_ID` (`R_ID`);
+  ADD PRIMARY KEY (`F_ID`);
 
 --
 -- Indexes for table `manager`
@@ -163,14 +160,12 @@ ALTER TABLE `manager`
 ALTER TABLE `orders`
   ADD PRIMARY KEY (`order_ID`),
   ADD KEY `F_ID` (`F_ID`),
-  ADD KEY `username` (`username`),
-  ADD KEY `R_ID` (`R_ID`);
+  ADD KEY `username` (`username`);
 
 --
 -- Indexes for table `restaurants`
 --
 ALTER TABLE `restaurants`
-  ADD PRIMARY KEY (`R_ID`),
   ADD UNIQUE KEY `M_ID_2` (`M_ID`),
   ADD KEY `M_ID` (`M_ID`);
 
@@ -191,8 +186,6 @@ ALTER TABLE `orders`
 --
 -- AUTO_INCREMENT for table `restaurants`
 --
-ALTER TABLE `restaurants`
-  MODIFY `R_ID` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- Constraints for dumped tables
 --
@@ -207,8 +200,6 @@ ALTER TABLE `restaurants`
 ALTER TABLE `orders`
   ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`F_ID`) REFERENCES `food` (`F_ID`),
   ADD CONSTRAINT `orders_ibfk_2` FOREIGN KEY (`username`) REFERENCES `customer` (`username`),
-  ADD CONSTRAINT `orders_ibfk_3` FOREIGN KEY (`R_ID`) REFERENCES `restaurants` (`R_ID`);
-
 --
 -- Constraints for table `restaurants`
 --
