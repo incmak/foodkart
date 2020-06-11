@@ -144,7 +144,7 @@ header('Location: managerlogin.php'); // Redirecting To Home Page
 
   <footer class="container-fluid bg-4 text-center">
   <br>
-  <p> Food Exploria 2017 | &copy All Rights Reserved </p>
+  <p> <!-- copuright -->d </p>
   <br>
   </footer>
 </html>
