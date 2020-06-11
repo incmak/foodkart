@@ -64,12 +64,11 @@ CREATE TABLE `food` (
 --
 
 INSERT INTO `food` (`F_ID`, `name`, `price`, `description`, `R_ID`, `images_path`) VALUES
-(58, 'Juicy Masala Paneer Kathi Roll', 40, 'Juicy Masala Paneer Kathi Roll loaded with Masala Paneer chunks, onion & Mayo.', 1, 'images/Masala_Paneer_Kathi_Roll.jpg'),
-(59, 'Meurig Fish', 60, 'Try Meurig - A whole Pomfret fish grilled with tangy marination & served with grilled onions and tomatoes.', 2, 'images/Meurig.jpg'),
-(60, 'Chocolate Hazelnut Truffle', 99, 'Lose all senses over this very delicious chocolate hazelnut truffle.', 3, 'images/Chocolate_Hazelnut_Truffle.jpg'),
-(61, 'Happy Happy Choco Chip Shake', 80, 'Happy Happy Choco Chip Shake - a perfect party sweet treat.', 1, 'images/Happy_Happy_Choco_Chip_Shake.jpg'),
-(62, 'Spring Rolls', 65, 'Delicious Spring Rolls by Dragon Hut, Delhi. Order now!!!', 2, 'images/Spring_Rolls.jpg'),
-(63, 'Baahubali Thali', 75, 'Baahubali Thali is accompanied by Kattapa Biriyani, Devasena Paratha, Bhalladeva Patiala Lassi', 3, 'images/Baahubali_Thali.jpg');
+(121, 'chikken Roll', 70, 'chicken roll with finest chicken', 1, 'images/Masala_Paneer_Kathi_Roll.jpg'),
+(122, 'Burger', 60, 'description for Burger', 2, 'images/Meurig.jpg'),
+(123, 'Patties', 40, 'description for Patty', 3, 'images/Chocolate_Hazelnut_Truffle.jpg'),
+(124, 'Fried Rice', 130, 'description for Fried rice', 1, 'images/Happy_Happy_Choco_Chip_Shake.jpg'),
+(125, 'Biryani', 200, 'Description for fried rice', 2, 'images/Spring_Rolls.jpg');
 
 -- --------------------------------------------------------
 
