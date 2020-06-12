@@ -140,19 +140,19 @@ else {
     <div class="carousel-inner">
 
       <div class="item active">
-      <img src="images/slide001.jpg" style="width:100%;">
-      <div class="carousel-caption">
-      </div>
-      </div>
-
-      <div class="item">
       <img src="images/slide002.jpg" style="width:100%;">
       <div class="carousel-caption">
+      </div>
+      </div>
+
+      <div class="item">
+      <img src="images/slide003.jpg" style="width:100%;">
+      <div class="carousel-caption">
 
       </div>
       </div>
       <div class="item">
-      <img src="images/slide003.jpg" style="width:100%;">
+      <img src="images/slide002.jpg" style="width:100%;">
       <div class="carousel-caption">
       
       </div>
