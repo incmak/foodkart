@@ -5,7 +5,7 @@ session_start();
 <html>
 
   <head>
-    <title> About | Food Exploria </title>
+    <title> About | FoodKart </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/aboutus.css">
@@ -49,7 +49,7 @@ session_start();
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Food Exploria</a>
+          <a class="navbar-brand" href="index.php">FoodKart</a>
         </div>
 
         <div class="collapse navbar-collapse " id="myNavbar">
@@ -123,92 +123,7 @@ else {
 
     <div class="wide">
         
-        <div class="tagline">It's not our <font color="red"><strong>work life</strong></font>, it's our <font color="green"><strong><em>life's work</em>.</strong></font></div>
-    </div>
-
-    <div class="paragraph1">
-      <h1>OUR TEAM</h1>
-      <h3><p>Food Exploria was founded in 2017. We care about quality, craft and disciplined experimentation. We are active contributors to open source software.</p><p> We help innovate, develop and pioneer. </p></h3>
-    </div>
-
-    <div class="col-xs-12 line"><hr></div>
-
-    <div class="col-md-10" style="float: none; margin: 0 auto;">
-        <div class="paragraph2">
-          <h1><center>A FEW THINGS WE BELIEVE</center></h1>
-          <p><br>
-          <div class="goldcolor">
-          <h2>1. Interrogate the premise.</h2>
-          </div>
-          <h3>Test every assumption. Make sure the problems we aim to solve are the right ones.</h3> 
-          </p>
-          <p><br>
-          <div class="goldcolor">
-          <h2>2. Find the opportunity.</h2>
-          </div>
-          <h3>Dive head first into research and come up with a strategy that feels like an <strong>AH HA!</strong> moment.</h3> 
-          </p>
-          <p><br>
-          <div class="goldcolor">
-            <h2>3. Clients == teammates.</h2>
-            </div>
-            <h3>You hired Food Exploria, and now we're one team with a shared mission. Let's figure it our together.</h3>
-          </p>
-          <p><br>
-          <div class="goldcolor">
-            <h2>4. Be tech-agnostic.</h2>
-            </div>
-            <h3>Our engineers favour versatility over specialization, using the best technology for the job.</h3>
-          </p>
-          <p><br>
-          <div class="goldcolor">
-            <h2>5. Design for real life.</h2>
-            </div>
-            <h3>The things we make will add measurable value to your business and the lives of your users.</h3>
-          </p>
-        </div>
-    </div>
-
-    <div class="col-xs-12 line"><hr></div>
-
-    <div class="paragraph1">
-    <h1><strong> ABOUT US </strong></h1>
-    <h3>
-      <p>
-        The purpose of <font color="green"><strong>Food Exploria</strong></font> is to automate the existing manual system by the help of computerized equipments and full-fledged computer software, fulfilling their requirements, so that their valuable data/information can be stored for a longer period with easy accessing and manipulation of the same. The required software and hardware are easily available and easy to work with.
-      </p>
-      <p>
-        <font color="green"><strong>Food Exploria</strong></font>, as described above, can lead to <font color="green"><strong>error free, secure, reliable and fast management system.</strong></font> It can assist the user to concentrate on their other activities rather to concentrate on the record keeping. Thus it will help organization in better utilization of resources. The organization can maintain computerized records without redundant entries. That means that one need not be distracted by information that is not relevant, while being able to reach the information. 
-      </p>
-      <p>
-        <font color="green"><strong>Basically the project describes how to manage for good performance and better services for the clients.</strong></font> 
-      </p>
-    </h3>  
-    </div>
-
-    <div class="col-xs-12 line"><hr></div>
-  <div class="paragraph3">
-    <div class="missionbox">
-      <div class="missionfont">
-      <strong>Our mission is to ensure nobody has a bad meal.</strong>
-      
-    </div>
-     
-    </div>
-    
-  </div>    
-  
-  <div class="paragraph1">
-    <h1><strong> We do this by</strong></h1>
-    <p><br>
-    <h2><strong><div class="darkgoldcolor">Helping people discover great places around them.</div></strong></h2>
-    <h3>Our team gathers informations from every restaurant on a regular basis to ensure our data is fresh. Our vast community of food lovers share their revies and photos, so you have all that you need to make an informed choice.</h3>
-    </p>
-    <p><br>
-      <h2><strong><div class="darkgoldcolor">Enabling restaurants to create amazing experiences.</div></strong></h2>
-      <h3>With dedicated engagement and management tools, we're enabling restaurants to spend more time focusing on food itself, which translates directly to better dining experiences</h3>
-    </p>
-  </div>
+       
          </body>
 
   <footer class="container-fluid bg-4 text-center">
