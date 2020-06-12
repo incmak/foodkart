@@ -79,8 +79,7 @@ header('Location: managerlogin.php'); // Redirecting To Home Page
 
 <div class="container">
     <div class="jumbotron">
-     <h1>Hello Manager! </h1>
-     <p>Manage all your restaurant from here</p>
+    <marquee><p>Manage your food from here</p></marquee> 
 
     </div>
     </div>

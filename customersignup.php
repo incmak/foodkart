@@ -1,7 +1,7 @@
 <html>
 
   <head>
-    <title> Guest Signup | FoodKart </title>
+    <title> User Signup | FoodKart </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/managersignup.css">
@@ -79,9 +79,7 @@
 
     <div class="container">
     <div class="jumbotron">
-     <h1>Hi Guest, <br> Welcome to <span class="edit"> FoodKart </span></h1>
-     <br>
-   <p>Get started by creating your account</p>
+   <p align="center">Get started by creating your account<span class="edit"> FoodKart </span></p>
     </div>
     </div>
 

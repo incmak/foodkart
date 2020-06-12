@@ -136,8 +136,8 @@ if(!empty($_SESSION["cart"]))
   ?>
   <div class="container">
       <div class="jumbotron">
-        <h1>Your Shopping Cart</h1>
-        <p>Looks tasty...!!!</p>
+        <h1 align="center"Shopping Cart</h1>
+        <p></p>
         
       </div>
       
@@ -190,7 +190,7 @@ if(empty($_SESSION["cart"]))
   ?>
   <div class="container">
       <div class="jumbotron">
-        <h1>Your Shopping Cart</h1>
+        <h1 align="center">Shopping Cart</h1>
         <p>Oops! We can't smell any food here. Go back and <a href="foodlist.php">order now.</a></p>
         
       </div>
