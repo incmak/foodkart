@@ -180,7 +180,7 @@ else {
         
         </p>
         <p class="edit2"><strong>Get in touch with us on Social Media.</strong></p>
-        <pre><a href="https://www.facebook.com/incmak/" target="_blank"><img src="images/facebook.jpg" width="50px" height="50px"></a>   <a href="https://twitter.com/incmakt/" target="_blank"><img src="images/twitter.jpg" width="50px" height="50px"></a>  <a href="https://www.instagram.com/inc.mak" target="_blank"><img src="images/insta.jpg" width="50px" height="50px"></a></pre>
+        <pre><a href="https://www.facebook.com/incmak/" target="_blank"><img src="images/facebook.png" width="50px" height="50px"></a>   <a href="https://twitter.com/incmakt/" target="_blank"><img src="images/twitter.png" width="50px" height="50px"></a>  <a href="https://www.instagram.com/inc.mak" target="_blank"><img src="images/insta.png" width="50px" height="50px"></a></pre>
         <p class="edit2">We even provide you a platform to share your food experiences and reviews by mailing it to us at <a href="@gmail.com">@gmail.com</a> </p>
       
 
