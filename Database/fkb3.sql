@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
--- https://www.phpmyadmin.net/
+-- version 4.5.5.1
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2020 at 07:24 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.4
+-- Generation Time: Dec 24, 2017 at 05:23 PM
+-- Server version: 5.7.11
+-- PHP Version: 5.6.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,9 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `fkb2`
+-- Database: `foodkart`
 --
-
+CREATE DATABASE IF NOT EXISTS `dbfoodkart` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `dbfoodkart`;
 -- --------------------------------------------------------
 
 --
@@ -57,6 +56,7 @@ CREATE TABLE `food` (
   `name` varchar(30) NOT NULL,
   `price` int(30) NOT NULL,
   `description` varchar(200) NOT NULL,
+  `R_ID` int(30) NOT NULL,
   `images_path` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -64,13 +64,12 @@ CREATE TABLE `food` (
 -- Dumping data for table `food`
 --
 
-INSERT INTO `food` (`F_ID`, `name`, `price`, `description`, `images_path`) VALUES
-(121, 'chikken Roll', 70, 'chicken roll with finest chicken', 'images/Masala_Paneer_Kathi_Roll.jpg'),
-(122, 'Burger', 60, 'description for Burger', 'images/Meurig.jpg'),
-(123, 'Patties', 40, 'description for Patty', 'images/Chocolate_Hazelnut_Truffle.jpg'),
-(124, 'Fried Rice', 130, 'description for Fried rice', 'images/Happy_Happy_Choco_Chip_Shake.jpg'),
-(125, 'Biryani', 200, 'Description for fried rice', 'images/Spring_Rolls.jpg');
-
+INSERT INTO `food` (`F_ID`, `name`, `price`, `description`, `R_ID`,`images_path`) VALUES
+(121, 'chikken Roll', 70, 'chicken roll with finest chicken', 1,'images/Masala_Paneer_Kathi_Roll.jpg'),
+(122, 'Burger', 60, 'description for Burger', 2,'images/Meurig.jpg'),
+(123, 'Patties', 40, 'description for Patty',1, 'images/Chocolate_Hazelnut_Truffle.jpg'),
+(124, 'Fried Rice', 130, 'description for Fried rice', 2,'images/Happy_Happy_Choco_Chip_Shake.jpg'),
+(125, 'Biryani', 200, 'Description for fried rice',3, 'images/Spring_Rolls.jpg');
 -- --------------------------------------------------------
 
 --
@@ -91,8 +90,10 @@ CREATE TABLE `manager` (
 --
 
 INSERT INTO `manager` (`username`, `fullname`, `email`, `contact`, `address`, `password`) VALUES
-('hanan', 'Hanan Ahmed', 'hanan0011@gmail.com', '9906990699', 'Kmr', 'hanan'),
-('mak', 'MAK', 'mak@gmail.com', '9797979797', 'Sgr', 'mak');
+('hanan01', 'Hanan Ahmed', 'hanan0011@gmail.com', '9906990699', 'Kmr', 'hanan'),
+('mak02', 'MAK', 'mak@gmail.com', '9797979797', 'Sgr', 'mak'),
+('faheem03', 'Faheem Ahmed', 'faheem@gmail.com', '9906990699', 'Kmr', 'faheem'),
+('masroof04', 'Masroof', 'masroof@gmail.com', '9797979797', 'Sgr', 'masroof');
 
 -- --------------------------------------------------------
 
@@ -107,7 +108,8 @@ CREATE TABLE `orders` (
   `price` int(30) NOT NULL,
   `quantity` int(30) NOT NULL,
   `order_date` date NOT NULL,
-  `username` varchar(30) NOT NULL
+  `username` varchar(30) NOT NULL,
+  `R_ID` int(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -130,9 +132,9 @@ CREATE TABLE `restaurants` (
 --
 
 INSERT INTO `restaurants` (`R_ID`, `name`, `email`, `contact`, `address`, `M_ID`) VALUES
-(1, 'Amigos', 'amigos@restaurant.com', '4567432190', 'Gogji Bagh', 'amigo#001'),
-(2, 'Chilliz', 'chillz@restaurant.com', '78976534234', 'Dargah', 'chillz#001'),
-(3, 'Tib Hut', 'tibhut@restaurant.com', '123532345', 'lachowk', 'Tib#001');
+(1, 'Amigos', 'amigos@restaurant.com', '4567432190', 'Gogji Bagh', 'hanan01'),
+(2, 'Chilliz', 'chillz@restaurant.com', '78976534234', 'Dargah', 'mak02'),
+(3, 'Tib Hut', 'tibhut@restaurant.com', '123532345', 'lachowk', 'faheem03');
 
 --
 -- Indexes for dumped tables
@@ -148,7 +150,8 @@ ALTER TABLE `customer`
 -- Indexes for table `food`
 --
 ALTER TABLE `food`
-  ADD PRIMARY KEY (`F_ID`);
+  ADD PRIMARY KEY (`F_ID`,`R_ID`),
+  ADD KEY `R_ID` (`R_ID`);
 
 --
 -- Indexes for table `manager`
@@ -162,7 +165,8 @@ ALTER TABLE `manager`
 ALTER TABLE `orders`
   ADD PRIMARY KEY (`order_ID`),
   ADD KEY `F_ID` (`F_ID`),
-  ADD KEY `username` (`username`);
+  ADD KEY `username` (`username`),
+  ADD KEY `R_ID` (`R_ID`);
 
 --
 -- Indexes for table `restaurants`
@@ -180,31 +184,40 @@ ALTER TABLE `restaurants`
 -- AUTO_INCREMENT for table `food`
 --
 ALTER TABLE `food`
-  MODIFY `F_ID` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
-
+  MODIFY `F_ID` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
   MODIFY `order_ID` int(30) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `restaurants`
 --
 ALTER TABLE `restaurants`
   MODIFY `R_ID` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `food`
+--
+ALTER TABLE `food`
+  ADD CONSTRAINT `food_ibfk_1` FOREIGN KEY (`R_ID`) REFERENCES `restaurants` (`R_ID`);
 
 --
 -- Constraints for table `orders`
 --
 ALTER TABLE `orders`
   ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`F_ID`) REFERENCES `food` (`F_ID`),
-  ADD CONSTRAINT `orders_ibfk_2` FOREIGN KEY (`username`) REFERENCES `customer` (`username`);
-COMMIT;
+  ADD CONSTRAINT `orders_ibfk_2` FOREIGN KEY (`username`) REFERENCES `customer` (`username`),
+  ADD CONSTRAINT `orders_ibfk_3` FOREIGN KEY (`R_ID`) REFERENCES `restaurants` (`R_ID`);
+
+--
+-- Constraints for table `restaurants`
+--
+ALTER TABLE `restaurants`
+  ADD CONSTRAINT `restaurants_ibfk_1` FOREIGN KEY (`M_ID`) REFERENCES `manager` (`username`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -1,7 +1,7 @@
 <html>
 
   <head>
-    <title> Guest Signup | Food Exploria </title>
+    <title> Guest Signup | FoodKart </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/managersignup.css">
@@ -45,7 +45,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Food Exploria</a>
+          <a class="navbar-brand" href="index.php">FoodKart</a>
         </div>
 
         <div class="collapse navbar-collapse " id="myNavbar">
@@ -79,7 +79,7 @@
 
     <div class="container">
     <div class="jumbotron">
-     <h1>Hi Guest, <br> Welcome to <span class="edit"> FoodExploria </span></h1>
+     <h1>Hi Guest, <br> Welcome to <span class="edit"> FoodKart </span></h1>
      <br>
    <p>Get started by creating your account</p>
     </div>

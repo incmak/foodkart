@@ -5,7 +5,7 @@ function Connect()
 	$dbhost = "localhost";
 	$dbuser = "root";
 	$dbpass = "";
-	$dbname = "foodexploria";
+	$dbname = "dbfoodkart";
 
 	//Create Connection
 	$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname) or die($conn->connect_error);

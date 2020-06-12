@@ -1,4 +1,8 @@
+
+<marquee>Will be available soon</marquee>
+
 <?php
+/*
 session_start();
 require 'connection.php';
 $conn = Connect();
@@ -11,7 +15,7 @@ header("location: customerlogin.php"); //Redirecting to myrestaurant Page
 <html>
 
   <head>
-    <title> Online Payment | Food Exploria </title>
+    <title> Online Payment | FoodKart </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/COD.css">
@@ -55,7 +59,7 @@ header("location: customerlogin.php"); //Redirecting to myrestaurant Page
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Food Exploria</a>
+          <a class="navbar-brand" href="index.php">FoodKart</a>
         </div>
 
         <div class="collapse navbar-collapse " id="myNavbar">
@@ -223,3 +227,5 @@ else {
   <br>
   </footer>
 </html>
+*/
+?>

@@ -134,10 +134,10 @@ else {
 
     <div class="container" >
     <div class="col-md-5" style="float: none; margin: 0 auto;">
-      <div class="form-area" ">
-        <form role="form">
+      <div class="form-area" >
+        <form action="thanks.php">
         <br style="clear: both">
-          <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> Contact Form</h3>
+          <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> Contact </h3>
 
           <div class="form-group">
             <input type="text" class="form-control" id="name" name="name" placeholder="Name" required autofocus="">
@@ -159,7 +159,7 @@ else {
            <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
            <span class="help-block"><p id="characterLeft" class="help-block">Max Character length : 140 </p></span>
           </div> 
-          <button type="button" id="submit" name="submit" class="btn btn-primary pull-right"> Submit Form</button>    
+          <button type="button" id="submit" name="submit" class="btn btn-primary pull-right"> Submit (disabled) </button>    
         </form>
 
         

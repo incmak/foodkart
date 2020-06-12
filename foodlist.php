@@ -11,7 +11,7 @@ header("location: customerlogin.php"); //Redirecting to myrestaurant Page
 <html>
 
   <head>
-    <title> Explore | Food Exploria </title>
+    <title> Explore | FoodKart </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/foodlist.css">
@@ -55,7 +55,7 @@ header("location: customerlogin.php"); //Redirecting to myrestaurant Page
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Food Exploria</a>
+          <a class="navbar-brand" href="index.php">FoodKart</a>
         </div>
 
         <div class="collapse navbar-collapse " id="myNavbar">
@@ -173,8 +173,7 @@ else {
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>Food Exploria</h1>      
-    <p>Let food be thy medicine and medicine be thy food</p>
+    <h1>Foodkart</h1>      
   </div>
 </div>
 
@@ -193,12 +192,11 @@ $conn = Connect();
 
 $sql = "SELECT * FROM FOOD ORDER BY F_ID";
 $result = mysqli_query($conn, $sql);
-/*
 $R_namesql = "SELECT RESTAURANTS.name FROM RESTAURANTS, FOOD WHERE FOOD.F_ID=RESTAURANTS.R_ID";
 $R_nameresult = mysqli_query($conn,$R_namesql);
 $R_namers = mysqli_fetch_array($R_nameresult, MYSQLI_BOTH);
 $R_name = $R_namers['R_name'];
-*/
+
 if (mysqli_num_rows($result) > 0)
 {
 
@@ -234,8 +232,8 @@ else
   <div class="container">
     <div class="jumbotron">
       <center>
-         <label style="margin-left: 5px;color: red;"> <h1>Oops! No food is available.</h1> </label>
-        <p>Stay Hungry...! :P</p>
+         <label style="margin-left: 5px;color: red;"> <h1> No food is available.</h1> </label>
+        <p>Stay Home stay safe!</p>
       </center>
        
     </div>
@@ -253,7 +251,7 @@ else
 <!--
   <footer class="container-fluid bg-4 text-center">
   <br>
-  <p> Food Exploria 2017 | &copy All Rights Reserved </p>
+  <p> FoodKart 2017 | &copy All Rights Reserved </p>
   <br>
   </footer>
 -->

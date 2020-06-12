@@ -1,7 +1,7 @@
 <html>
 
   <head>
-    <title> Manager Login | Food Exploria </title>
+    <title> Manager Login | FoodKart </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/manager_registered_success.css">
@@ -45,7 +45,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Food Exploria</a>
+          <a class="navbar-brand" href="index.php">FoodKart</a>
         </div>
 
         <div class="collapse navbar-collapse " id="myNavbar">

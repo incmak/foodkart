@@ -73,7 +73,7 @@ if (!$success){
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Food Exploria</a>
+          <a class="navbar-brand" href="index.php">FoodKart</a>
         </div>
 
         <div class="collapse navbar-collapse " id="myNavbar">
@@ -106,7 +106,7 @@ if (!$success){
 	</body>
 	  <footer class="container-fluid bg-4 text-center">
   <br>
-  <p> Food Exploria 2017 | &copy All Rights Reserved </p>
+  <p> FoodKart 2017 | &copy All Rights Reserved </p>
   <br>
   </footer>
 	</html>

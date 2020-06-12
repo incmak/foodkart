@@ -10,7 +10,7 @@ header("location: foodlist.php"); //Redirecting to myrestaurant Page
 <html>
 
   <head>
-    <title> Guest Login | Food Exploria </title>
+    <title> Guest Login | FoodKart </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/managerlogin.css">
@@ -54,7 +54,7 @@ header("location: foodlist.php"); //Redirecting to myrestaurant Page
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Food Exploria</a>
+          <a class="navbar-brand" href="index.php">FoodKart</a>
         </div>
 
         <div class="collapse navbar-collapse " id="myNavbar">
@@ -88,7 +88,7 @@ header("location: foodlist.php"); //Redirecting to myrestaurant Page
 
     <div class="container">
     <div class="jumbotron">
-     <h1>Hi Guest,<br> Welcome to <span class="edit"> FoodExploria </span></h1>
+     <h1>Hi Guest,<br> Welcome to <span class="edit"> FoodKart </span></h1>
      <br>
    <p>Kindly LOGIN to continue.</p>
     </div>

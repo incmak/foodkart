@@ -12,7 +12,7 @@ unset($_SESSION["cart"]);
 <html>
 
   <head>
-    <title> Cart | Food Exploria </title>
+    <title> Cart | FoodKart </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/COD.css">
@@ -56,7 +56,7 @@ unset($_SESSION["cart"]);
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Food Exploria</a>
+          <a class="navbar-brand" href="index.php">FoodKart</a>
         </div>
 
         <div class="collapse navbar-collapse " id="myNavbar">
@@ -140,7 +140,7 @@ else {
         </div>
         <br>
 
-<h2 class="text-center"> Thank you for shopping at Food Exploria! The ordering process is now complete.</h2>
+<h2 class="text-center"> Thank you for shopping at FoodKart! The ordering process is now complete.</h2>
 
 <?php 
   $num1 = rand(100000,999999); 
