@@ -126,6 +126,7 @@ header('Location: managerlogin.php'); // Redirecting To Home Page
 
           <div class="form-group">
             <input type="file" class="form-control" id="images_path" name="images_path" placeholder="Your Food Image Path [images/<filename>.<extention>]" required="">
+            *Image should be in image/
           </div>
 
           <div class="form-group">

@@ -66,10 +66,10 @@ CREATE TABLE `food` (
 
 INSERT INTO `food` (`F_ID`, `name`, `price`, `description`, `R_ID`,`images_path`) VALUES
 (121, 'chikken Roll', 70, 'chicken roll with finest chicken', 1,'images/Masala_Paneer_Kathi_Roll.jpg'),
-(122, 'Burger', 60, 'description for Burger', 2,'images/Meurig.jpg'),
-(123, 'Patties', 40, 'description for Patty',1, 'images/Chocolate_Hazelnut_Truffle.jpg'),
-(124, 'Fried Rice', 130, 'description for Fried rice', 2,'images/Happy_Happy_Choco_Chip_Shake.jpg'),
-(125, 'Biryani', 200, 'Description for fried rice',3, 'images/Spring_Rolls.jpg');
+(122, 'Burger', 60, 'description for Burger', 2,'images/1burger.jpg'),
+(123, 'Patties', 40, 'description for Patty',1, 'images/1patty.jpg'),
+(124, 'Fried Rice', 130, 'description for Fried rice', 2,'images/1friedrice.jpg'),
+(125, 'Biryani', 200, 'Description for fried rice',3, 'images/1biryani.jpg');
 -- --------------------------------------------------------
 
 --

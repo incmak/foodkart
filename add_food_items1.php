@@ -19,6 +19,12 @@ $R_IDsql = "SELECT RESTAURANTS.R_ID FROM RESTAURANTS, MANAGER WHERE RESTAURANTS.
 $R_IDresult = mysqli_query($conn,$R_IDsql);
 $R_IDrs = mysqli_fetch_array($R_IDresult, MYSQLI_BOTH);
 $R_ID = $R_IDrs['R_ID'];
+
+$file_name = $_FILES['images_path']['name'];
+$file_tmp = $_FILES['images_path']['tmp_name'];
+move_uploaded_file($file_tmp, "images/" . $file_name);
+
+
 $target_dir = "images/";
 $target_file = $target_dir . basename($_FILES["images_path"]["name"]);
 $uploadOk = 1;
