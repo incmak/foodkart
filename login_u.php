@@ -27,7 +27,8 @@ $stmt -> store_result();
 
 if ($stmt->fetch())  //fetching the contents of the row
 {
-	$_SESSION['login_user2']=$username; // Initializing Session
+	$_SESSION['login_user2']=$username;
+    // Initializing Session
 	header("location: foodlist.php"); // Redirecting To Other Page
 } else {
 $error = "Username or Password is invalid";

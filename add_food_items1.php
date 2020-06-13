@@ -19,10 +19,15 @@ $R_IDsql = "SELECT RESTAURANTS.R_ID FROM RESTAURANTS, MANAGER WHERE RESTAURANTS.
 $R_IDresult = mysqli_query($conn,$R_IDsql);
 $R_IDrs = mysqli_fetch_array($R_IDresult, MYSQLI_BOTH);
 $R_ID = $R_IDrs['R_ID'];
+$target_dir = "images/";
+$target_file = $target_dir . basename($_FILES["images_path"]["name"]);
+$uploadOk = 1;
 
+
+//
 $images_path = $conn->real_escape_string($_POST['images_path']);
 
-$query = "INSERT INTO FOOD(name,price,description,R_ID,images_path) VALUES('" . $name . "','" . $price . "','" . $description . "','" . $R_ID ."','" . $images_path . "')";
+$query = "INSERT INTO FOOD(name,price,description,R_ID,images_path) VALUES('" . $name . "','" . $price . "','" . $description . "','" . $R_ID ."','" . $target_file . "')";
 $success = $conn->query($query);
 
 if (!$success){

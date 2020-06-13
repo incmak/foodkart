@@ -178,20 +178,25 @@ header('Location: managerlogin.php'); // Redirecting To Home Page
           </div>
 
           <div class="form-group">
-            <label for="username"><span class="text-danger" style="margin-right: 5px;">*</span> Food Name: </label>
+            <label for="username"><span class="text-danger" style="margin-right: 5px;"></span> Food Name: </label>
             <input type="text" class="form-control" id="dname" name="dname" value=<?php echo $row1['name'];  ?> placeholder="Your Food name" required="">
           </div>     
 
           <div class="form-group">
-            <label for="username"><span class="text-danger" style="margin-right: 5px;">*</span> Food Price: </label>
+            <label for="username"><span class="text-danger" style="margin-right: 5px;"></span> Food Price: </label>
             <input type="text" class="form-control" id="dprice" name="dprice" value=<?php echo $row1['price'];  ?> placeholder="Your Food Price (INR)" required="">
           </div>
 
           <div class="form-group">
-            <label for="username"><span class="text-danger" style="margin-right: 5px;">*</span> Food Description: </label>
+            <label for="username"><span class="text-danger" style="margin-right: 5px;"></span> Food Description: </label>
             <input type="text" class="form-control" id="ddescription" name="ddescription" value=<?php echo $row1['description'];  ?> placeholder="Your Food Description" required="">
           </div>
-
+        
+         <div class="form-group">
+            <label for="username"><span class="text-danger" style="margin-right: 5px;"></span> Image [Disabled]* </label>
+            <input type="file" class="form-control" id="images_path" name="images_path" placeholder="Your Food Image Path [images/<filename>.<extention>]" >
+          </div>
+        
           <div class="form-group">
           <button type="submit" id="submit" name="submit" class="btn btn-primary pull-right" onclick="display_alert()" value="Display alert box" > Update </button>    
       </div>

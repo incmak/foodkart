@@ -1,7 +1,7 @@
 <html>
 
   <head>
-    <title> Home | FoodKart </title>
+    <title> My orders | FoodKart </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
@@ -64,15 +64,26 @@
    
     
     <figure class="glitch-filter-example">
-        <h1 class="glitch-filter-example__filtered-text">Foodkart<br><a href="foodlist.php"> Order Now</a></h1>
+        <h1 class="glitch-filter-example__filtered-text">WIP <br>
+          <script>
+    document.write('<a href="' + document.referrer + '">RETURN BACK</a>');
+</script> or
+       <br>
+       <a href="index.php">Return home</a>
+        </h1>
+        </h1>
   </figure>
   
       <figure class="glitch-filter-example">
-  <p class="glitch-filter-example__filtered-text">STAY HOME </p>
+  <p class="glitch-filter-example__filtered-text"> </p>
   </figure>
 
   <svg class="glitch-filter-example__demo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
-        <text class="glitch-filter-example__filtered-text" y="50" text-anchor="middle" x="50%" transform="translate(0 34)">STAY SAFE</text>
+        <text class="glitch-filter-example__filtered-text" y="50" text-anchor="middle" x="50%" transform="translate(0 34)"> STAY HOME
+        
+        </text>
+        
+        
         
     </svg>
 
