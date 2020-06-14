@@ -93,6 +93,7 @@ INSERT INTO `manager` (`username`, `fullname`, `email`, `contact`, `address`, `p
 ('hanan01', 'Hanan Ahmed', 'hanan0011@gmail.com', '9906990699', 'Kmr', 'hanan'),
 ('mak02', 'MAK', 'mak@gmail.com', '9797979797', 'Sgr', 'mak'),
 ('faheem03', 'Faheem Ahmed', 'faheem@gmail.com', '9906990699', 'Kmr', 'faheem'),
+('admin', 'Admin', 'admin@gmail.com', '9797979797', 'Sgr', 'root'),
 ('masroof04', 'Masroof', 'masroof@gmail.com', '9797979797', 'Sgr', 'masroof');
 
 -- --------------------------------------------------------
