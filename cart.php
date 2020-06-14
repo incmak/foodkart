@@ -143,7 +143,7 @@ if(!empty($_SESSION["cart"]))
       
     </div>
     <div class="table-responsive" style="padding-left: 100px; padding-right: 100px;" >
-<table class="table table-striped">
+<table class="table table-hover">
   <thead class="thead-dark">
 <tr>
 <th width="40%">Food Name</th>
