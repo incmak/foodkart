@@ -35,47 +35,6 @@ Abstract
 	The Online Food Ordering System described in this document has been designed to fill a specific need in the market by providing small restaurants with the ability to offer their customers an online ordering option. The system, which is highly customizable, allows the restaurant employees to easily manage the site content, most importantly the menu, themselves through a very intuitive graphical interface.
 	The website, which is the only component seen by the restaurant customers, is then built dynamically based on the current state of the system, so any changes made are reflected in real time. Visitors to the site, once registered, are then able to easily navigate this menu, add food items to their order, and specify delivery options with only a few clicks, greatly simplifying the ordering process. Back in the restaurant, placed orders are promptly retrieved and displayed in an easily readable format for efficient processing.
 	The purpose of this document is to provide in-depth descriptions of design and implementation details of the system, as well as descriptions of all available functionality and plans for evolution. In addition, user manuals and trouble-shooting tips have been included for all three components to give the reader a clear idea of intended typical use cases for the system.
- 
-Table of Contents
-Chapter 1: Need & Feasibility	5
-Need	5
-Feasibility	6
-Chapter 2: Requirements Specification	8
-System Model	8
-Functional Requirements	8
-The Web Ordering System	9
-Menu Management System	10
-Order Retrieval System	11
-User Interface Specifications	11
-Web Ordering System	11
-Menu Management System	12
-Order Retrieval System	12
-Non-functional Requirements	12
-System Evolution	13
-Chapter 3: System Design	15
-System Design	15
-Level 1: The Database & the 3 Components	15
-Level 2: Web Ordering System Components	15
-Level 2: Menu Management System Components	18
-Level 2: Order Retrieval System Components	19
-User Interface Design	20
-Help System Design	20
-Chapter 4: Testing Design	22
-Testing	22
-Phases	22
-Requirements Traceability	24
-Testing Schedule	25
-Recording Procedures	26
-Hardware and Software Requirements	27
-Chapter 5: User Manual	28
-Introductory Manual	28
-Using the Desktop Application	28
-Using the Web Ordering System	31
-Using the Help System	32
-System Reference Manual	33
-Services (Alphabetical)	33
-Error Recovery	34
-Installation	34
 
  
 Chapter 1: Need & Feasibility
