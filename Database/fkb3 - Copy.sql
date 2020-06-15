@@ -19,8 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `foodkart`
 --
-CREATE DATABASE IF NOT EXISTS `dbfoodkart` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `dbfoodkart`;
+CREATE DATABASE IF NOT EXISTS `dbtestkart` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `dbtestkart`;
 -- --------------------------------------------------------
 
 --
