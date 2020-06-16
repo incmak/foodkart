@@ -6,8 +6,8 @@ Database for the Application is in "Database" folder. It can be imported to your
 
 # Database
 - The default username for customer is cus1 and password pass1.
-- The default username for manager is admin01 and password is root.
-- or the mak02 and password mak
+- The default username for manager is admin and password is root.
+- or the mak and password mak
 - change the configuration of database in connection.php.
 
 

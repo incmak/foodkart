@@ -66,7 +66,7 @@ CREATE TABLE `food` (
 
 INSERT INTO `food` (`F_ID`, `name`, `price`, `description`, `R_ID`,`images_path`) VALUES
 (121, 'chikken Roll', 70, 'chicken roll with finest chicken', 1,'images/Masala_Paneer_Kathi_Roll.jpg'),
-(122, 'Burger', 60, 'description for Burger', 2,'images/1burger.jpg'),
+(122, 'Burger', 60, 'description for Burger', 1,'images/1burger.jpg'),
 (123, 'Patties', 40, 'description for Patty',1, 'images/1patty.jpg');
 -- --------------------------------------------------------
 
@@ -88,8 +88,8 @@ CREATE TABLE `manager` (
 --
 
 INSERT INTO `manager` (`username`, `fullname`, `email`, `contact`, `address`, `password`) VALUES
-('hanan01', 'Hanan Ahmed', 'hanan0011@gmail.com', '9906990699', 'Kmr', 'hanan'),
-('mak02', 'MAK', 'mak@gmail.com', '9797979797', 'Sgr', 'mak'),
+('hanan07', 'Hanan Ahmed', 'hanan0011@gmail.com', '9906990699', 'Kmr', 'hanan'),
+('mak', 'MAK', 'mak@gmail.com', '9797979797', 'Sgr', 'mak'),
 ('faheem03', 'Faheem Ahmed', 'faheem@gmail.com', '9906990699', 'Kmr', 'faheem'),
 ('admin', 'Admin', 'admin@gmail.com', '9797979797', 'Sgr', 'root'),
 ('masroof04', 'Masroof', 'masroof@gmail.com', '9797979797', 'Sgr', 'masroof');
@@ -131,9 +131,9 @@ CREATE TABLE `restaurants` (
 --
 
 INSERT INTO `restaurants` (`R_ID`, `name`, `email`, `contact`, `address`, `M_ID`) VALUES
-(1, 'Amigos', 'amigos@restaurant.com', '4567432190', 'Gogji Bagh', 'hanan01'),
-(2, 'Chilliz', 'chillz@restaurant.com', '78976534234', 'Dargah', 'mak02'),
-(3, 'Tib Hut', 'tibhut@restaurant.com', '123532345', 'lachowk', 'faheem03');
+(1, 'Amigos', 'amigos@restaurant.com', '4567432190', 'Gogji Bagh', 'admin'),
+(2, 'Chilliz', 'chillz@restaurant.com', '78976534234', 'Dargah', 'hanan07'),
+(3, 'Tib Hut', 'tibhut@restaurant.com', '123532345', 'lachowk', 'mak');
 
 --
 -- Indexes for dumped tables
