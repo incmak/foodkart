@@ -6,12 +6,16 @@ Database for the Application is in "Database" folder. It can be imported to your
 
 # Database
 - The default username for customer is cus1 and password pass1.
-- The default username for maneger is mak02 and password is mak.
+- The default username for maneger is admin and password is mak.
 - change the configuration of database in connection.php.
 
 
  Online Food Ordering System
 System Documentation
+=======
+- Online Food Ordering System
+# System Documentation
+
 
 
 # Abstract
@@ -27,19 +31,19 @@ Need
 	What we propose is an online ordering system, originally designed for small ventures, but may be expanded where many restaurants provide food within a common portal. The main advantage of our system is that it greatly simplifies the ordering process for both the customer and the restaurant. When the customer visits the ordering webpage, they are presented with an interactive and up-to-date menu, complete with all available options and dynamically adjusting prices based on the selected options. After making a selection, the item is then added to their order, which the customer can review the details of at any time before checking out. This provides instant visual confirmation of what was selected and ensures that items in the order are, in fact, what was intended.
 	The system also greatly lightens the load on the restaurant’s end, as the entire process of taking orders is automated. Once an order is placed on the webpage, it is placed into the database and then retrieved, in pretty much real-time, by a desktop application on the restaurant’s end. Within this application, all items in the order are displayed, along with their corresponding options and delivery details, in a concise and easy to read manner. This allows restaurant employees to quickly go through the orders as they are placed and produce the necessary items with minimal delay and confusion.
 	While there are already a few systems like this in existence but due to the scarcity and not very user-friendly nature of these system at our place, we started this project. The web order forms are built dynamically from the database, which can be managed using a graphical user interface. This allows the restaurant employees to not only set up and customize the system on their own, but also allows them to make changes to the menu in real time. [The exact same system can be used by numerous businesses with absolutely no modification to the code itself, which greatly increases its usefulness (Unimplemented for now)].
-Feasibility
+# Feasibility
 	At the present moment, the system is entirely functional, save the few minor bugs which are bound to present themselves during more extensive testing. A user is currently able to register and log in to the website and place an order. That order is then displayed, correctly and completely, in the order retrieval desktop application. Much of what is left to do focuses not on improving functionality, but rather on improving user experience by creating richer graphical interfaces for the user to interact with and modifying the application’s icons and color schemes to make them more pleasing to look at and use. For this reason, we feel that completing the project in the required timeframe is very feasible, particularly if we are able to adhere to the dates.
 	In addition to time, a second factor influencing feasibility is resources, which also should not be a concern here. The online ordering system is structured like a fairly standard web application, and as such requires no special hardware and only basic software, namely web and database servers, to function properly. 
  
-Chapter 2: Requirements Specification
-System Model
+# Chapter 2: Requirements Specification
+# System Model
 	The structure of the system can be divided into three main logical components. The first component must provide some form of menu management, allowing the restaurant to control what can be ordered by customers. The second component is the web ordering system and provides the functionality for customers to place their order and supply all necessary details. The third and final logical component is the order retrieval system. Used by the restaurant to keep track of all orders which have been placed, this component takes care of retrieving and displaying order information, as well as updating orders which have already been processed.
 
 
 
 
 
-Functional Requirements
+# Functional Requirements
 	As can be seen in the system model diagramed above, each of the three system components essentially provides a layer of isolation between the end user and the database. Firstly, allowing the end user to interact with the system through a rich interface provide a much more enjoyable user experience, particularly for the non-technical users which will account for the majority of the system’s users. In addition, this isolation layer also protects the integrity of the database by preventing users from taking any action outside those which the system is designed to handle. Because of this design pattern, it is essential to enumerate exactly which functions a user will be presented and these functions are outlined below, grouped by component.
 The Web Ordering System
 Users of the web ordering system, namely restaurant customers, must be provided the following functionality:
@@ -87,7 +91,7 @@ System Evolution
 	As mentioned in the system model, at the heart of the entire ordering system is the database. In fact, the system could be completely operational using nothing but the database and an appropriate shell utility, assuming that all users are well-versed in SQL and enjoy using it to order food. While this would be a bit extreme, it does illustrate the point that the one part of the system which will stay relatively constant is the database. On the other hand, it is very probable that the other components will continue to evolve with time. For example, with the booming popularity of mobile applications, we would really like to make the web interface available as a phone application as well. Also it may make sense to at some point migrate the menu management and order retrieval systems to web, or even mobile, applications as well, as some users may prefer to use them as such.
 	We are also certain that if this system goes into actual use, many requests will arise for additional features which we had not previously considered, but would be useful to have. For this reason, we feel as though the application can be constantly evolving, which we consider a very good thing.
  
-Chapter 3: System Design
+# Chapter 3: System Design
 System Design
 
 Level 1: The Database & the 3 Components
@@ -137,7 +141,7 @@ The order detail panel which contains a hierarchical tree structure for viewing 
 User Interface Design
 The user interface design principles can be broken into two groups. The interface in the web application is designed to limit free form user input, using mostly drop-down menus, radio buttons and check boxes. This is done for only reason to simplify the ordering process as much as possible. Free form input is necessary in the menu management component, however, as all of the values must be user supplied. The interface for this component contains traditional forms comprised of text fields and corresponding labels, along with save and discard buttons for each form.
  
-Chapter 4: Testing Design
+# Chapter 4: Testing Design
 Testing
 Phases
 	The structure of the system can be divided into three main logical components, plus the database, which is invisible to the end user. Each of these components must be tested individually, and the approaches which will be used for each component are described in the following sections.
@@ -146,7 +150,7 @@ Phases
 
 
 
-Database
+# Database
 	Testing of the database component is very straightforward, and has actually already been mostly completed. The database was the first component designed and before beginning work on any of the applications, we wrote all of the SQL statements and executed them directly, essentially isolating the database, using the MySQL client. By doing this we were able to reveal, and promptly fix a large percentage of the errors within the database itself.
 Web Ordering System
 	Testing of the web ordering system will be the most effort oriented, as it is the component that will see the highest frequency of use and will be exposed to the most users, which leads to a higher potential of failure. Testing here will be divided into two phases. During normal use case testing we will execute all of the functions available through the web interface using a broad spectrum of reasonable values that a user would be expected to input.
