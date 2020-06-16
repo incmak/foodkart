@@ -20,7 +20,7 @@ header("location: customerlogin.php"); //Redirecting to myrestaurant Page
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
   <body>
-
+<div style="background-image: url('images/bg1.jpg'); background-size: cover;">
   <!--Back to top button..................................................................................-->
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <span class="glyphicon glyphicon-chevron-up"></span>

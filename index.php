@@ -11,6 +11,7 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
   <body>
+         <div style="background-image: url('images/bg1.jpg'); background-size: cover;">
       	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" class="filterwrapper">
         <defs>
             <svg id="glitchmask-r" width="100%" height="100%" viewbox="0 0 100 100" preserveAspectRatio="none">

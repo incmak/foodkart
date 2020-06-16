@@ -6,12 +6,12 @@ html {
 
 body {
     height: 100%;
-    background: black;
+    //background: url("images/bg1.jpg");
     margin: 0;
+    background-size: cover;
     padding: 3em;
     font: .8em/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
     color: white;
-    
     overflow: hidden;
 }
 
