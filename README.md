@@ -14,23 +14,6 @@ Database for the Application is in "Database" folder. It can be imported to your
 System Documentation
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Abstract
 	The Online Food Ordering System described in this document has been designed to fill a specific need in the market by providing small restaurants with the ability to offer their customers an online ordering option. The system, which is highly customizable, allows the restaurant employees to easily manage the site content, most importantly the menu, themselves through a very intuitive graphical interface.
 	The website, which is the only component seen by the restaurant customers, is then built dynamically based on the current state of the system, so any changes made are reflected in real time. Visitors to the site, once registered, are then able to easily navigate this menu, add food items to their order, and specify delivery options with only a few clicks, greatly simplifying the ordering process. Back in the restaurant, placed orders are promptly retrieved and displayed in an easily readable format for efficient processing.
