@@ -11,6 +11,7 @@ header("location: customerlogin.php"); //Redirecting to myrestaurant Page
 
   <head>
     <title> Cart | FoodKart </title>
+    <!-- Refresh webpage -->
     <script type="text/javascript">
         window.onload = function() {
     if(!window.location.hash) {
@@ -19,6 +20,7 @@ header("location: customerlogin.php"); //Redirecting to myrestaurant Page
     }
 }
       </script>
+      <!----------------------->
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/cart.css">
