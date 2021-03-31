@@ -1,3 +1,8 @@
+#Update: 
+This was a test and outdated project. Please check the updated project
+https://gitHub.com/incmak/efood
+
+
 # FoodKart
 Online Food Ordering Management System Mini-Project.
 
