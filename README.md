@@ -1,6 +1,6 @@
-** # Update: 
+**⚠ WARNING: 
 This was a test and outdated project. Please check the updated project
-https://gitHub.com/incmak/efood **
+https://gitHub.com/incmak/efood. **
 
 
 # FoodKart
